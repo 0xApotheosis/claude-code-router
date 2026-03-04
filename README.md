@@ -1,6 +1,7 @@
 > **Fork Note:** This fork adds additional functionality to support **Venice** as a provider:
 > - **Web search** support for Venice-backed models
-> - **Image analysis** fix: the `analyzeImage` agent tool now works correctly by adding `TextDecoderStream` to SSE pipelines (upstream bug: binary stream chunks were silently breaking the SSE parser)
+> - **Image in tool results** fix: images returned by the `Read` tool are now properly converted to `image_url` format instead of being stringified as text
+> - **`analyzeImage` agent tool** fix: adds `TextDecoderStream` to SSE pipelines so the agent tool interception actually works (upstream bug: binary stream chunks silently broke the SSE parser)
 
 ![](blog/images/claude-code-router-img.png)
 
