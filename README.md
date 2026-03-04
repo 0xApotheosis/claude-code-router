@@ -1,6 +1,6 @@
 > **Fork Note:** This fork adds additional functionality to support **Venice** as a provider:
 > - **Web search** support for Venice-backed models
-> - **Image recognition** in tool results, enabling models to process and understand images returned by tools
+> - **Image analysis** fix: the `analyzeImage` agent tool now works correctly by adding `TextDecoderStream` to SSE pipelines (upstream bug: binary stream chunks were silently breaking the SSE parser)
 
 ![](blog/images/claude-code-router-img.png)
 
